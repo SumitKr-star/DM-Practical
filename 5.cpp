@@ -1,3 +1,5 @@
+//  Write a Program to evaluate a polynomial function. (For example store f(x) = 4n² + 2n + 9 in an array and for a given value of n,
+// say n = 5, compute the value of f(n)).
 #include <iostream>
 using namespace std;
 
