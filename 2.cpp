@@ -6,7 +6,7 @@ class RELATION {
     int size;
 
 public:
-    // Constructor
+    
     RELATION() {
         size = 0;
         for (int i = 0; i < 10; i++)
@@ -14,9 +14,9 @@ public:
                 matrix[i][j] = 0;
     }
 
-    // -----------------------------------------------
-    // Input the relation matrix
-    // -----------------------------------------------
+    
+   
+    
     void inputRelation() {
         cout << "Enter the size of the set (max 10): ";
         cin >> size;
@@ -28,9 +28,7 @@ public:
         }
     }
 
-    // -----------------------------------------------
-    // Display the matrix
-    // -----------------------------------------------
+     
     void displayMatrix() {
         cout << "\nRelation Matrix:\n";
         cout << "  ";
@@ -44,9 +42,7 @@ public:
         }
     }
 
-    // -----------------------------------------------
-    // a. Reflexive: matrix[i][i] = 1 for all i
-    // -----------------------------------------------
+    
     bool isReflexive() {
         for (int i = 0; i < size; i++)
             if (matrix[i][i] != 1)
@@ -54,9 +50,7 @@ public:
         return true;
     }
 
-    // -----------------------------------------------
-    // b. Symmetric: matrix[i][j] = matrix[j][i]
-    // -----------------------------------------------
+    
     bool isSymmetric() {
         for (int i = 0; i < size; i++)
             for (int j = 0; j < size; j++)
@@ -65,10 +59,7 @@ public:
         return true;
     }
 
-    // -----------------------------------------------
-    // c. Anti-Symmetric:
-    //    if matrix[i][j]=1 and i!=j, then matrix[j][i]=0
-    // -----------------------------------------------
+    
     bool isAntiSymmetric() {
         for (int i = 0; i < size; i++)
             for (int j = 0; j < size; j++)
@@ -77,11 +68,7 @@ public:
         return true;
     }
 
-    // -----------------------------------------------
-    // d. Transitive:
-    //    if matrix[i][j]=1 and matrix[j][k]=1,
-    //    then matrix[i][k] must be 1
-    // -----------------------------------------------
+   
     bool isTransitive() {
         for (int i = 0; i < size; i++)
             for (int j = 0; j < size; j++)
@@ -92,12 +79,7 @@ public:
         return true;
     }
 
-    // -----------------------------------------------
-    // Check type of relation
-    // Equivalence    = Reflexive + Symmetric + Transitive
-    // Partial Order  = Reflexive + AntiSymmetric + Transitive
-    // None           = neither of the above
-    // -----------------------------------------------
+    
     void checkRelationType() {
         bool ref  = isReflexive();
         bool sym  = isSymmetric();
@@ -120,9 +102,7 @@ public:
     }
 };
 
-// -----------------------------------------------
-// MENU DRIVEN MAIN
-// -----------------------------------------------
+
 int main() {
     RELATION R;
     int choice;
