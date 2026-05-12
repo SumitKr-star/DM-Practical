@@ -1,3 +1,4 @@
+// Write a Program to check if a given graph is a complete graph. Represent the graph using the Adjacency Matrix representation.
 #include <iostream>
 using namespace std;
 
