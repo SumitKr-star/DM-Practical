@@ -15,7 +15,7 @@ int main() {
             cin >> matrix[i][j];
     }
 
-    // Display matrix
+    
     cout << "\nAdjacency Matrix:\n";
     cout << "  ";
     for (int i = 1; i <= v; i++) cout << i << " ";
@@ -27,10 +27,6 @@ int main() {
         cout << "\n";
     }
 
-    // Check complete graph:
-    // 1. No self loops: diagonal must be 0
-    // 2. Every other pair must be connected: matrix[i][j]=1 for all i!=j
-    // 3. Must be symmetric: matrix[i][j] == matrix[j][i]
 
     bool isComplete = true;
 
@@ -43,7 +39,7 @@ int main() {
                     break;
                 }
             } else {
-                // every other cell must be 1 and symmetric
+                
                 if (matrix[i][j] != 1 || matrix[i][j] != matrix[j][i]) {
                     isComplete = false;
                     break;
@@ -53,7 +49,7 @@ int main() {
         if (!isComplete) break;
     }
 
-    // Degree check: every vertex must have degree = v-1
+    
     cout << "\nVertex Degrees:\n";
     for (int i = 0; i < v; i++) {
         int degree = 0;
