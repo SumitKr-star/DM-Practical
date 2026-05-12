@@ -1,3 +1,5 @@
+// For any number n, write a program to list all the solutions of the equation x₁ + x₂ + x₃ + ... + xₙ = C, where C is a constant (C<=10)
+// and x₁, x₂, x₃,...,xₙ are nonnegative integers, using brute force strategy.
 #include <iostream>
 using namespace std;
 
