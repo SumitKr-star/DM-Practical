@@ -15,7 +15,7 @@ int main() {
             cin >> matrix[i][j];
     }
 
-    // Display matrix
+    
     cout << "\nAdjacency Matrix:\n";
     cout << "  ";
     for (int i = 1; i <= v; i++) cout << i << " ";
@@ -27,8 +27,7 @@ int main() {
         cout << "\n";
     }
 
-    // Out-degree: sum of row i (edges going OUT from vertex i)
-    // In-degree:  sum of column i (edges coming IN to vertex i)
+   
     cout << "\nVertex | In-degree | Out-degree\n";
     cout << "-------|-----------|-----------\n";
 
