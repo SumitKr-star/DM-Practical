@@ -21,12 +21,12 @@ int main() {
         cout << "\nEnter value of x to evaluate: ";
         cin >> x;
 
-        // Horner's method: a0*x^n + a1*x^(n-1) + ... = (...((a0*x + a1)*x + a2)*x...)
+        
         double result = coeff[0];
         for (int i = 1; i <= degree; i++)
             result = result * x + coeff[i];
 
-        // Display polynomial
+        
         cout << "f(x) = ";
         for (int i = 0; i <= degree; i++) {
             if (coeff[i] == 0) continue;
